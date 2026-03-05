@@ -11,9 +11,9 @@ jobs:
       - name: Download images
         run: |
           mkdir -p images
-          curl -L --max-time 30 -o images/sarit-kraus.jpg "https://upload.wikimedia.org/wikipedia/commons/a/af/Prof_Sarit_kraus.jpg"
-          curl -L --max-time 30 -o images/sharon-gannot.jpg "https://sharongannot.group/wp-content/themes/sound/img/pic-sharon-gannot.jpg"
-          curl -L --max-time 30 -o images/gal-kaminka.jpg "https://u.cs.biu.ac.il/~kaminkg/authors/galk/avatar_hu0524f3c4459aaec3b3a6f1993099c166_79443_270x270_fill_q75_lanczos_center.jpg"
+          curl -L --max-time 30 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36" -o images/sarit-kraus.jpg "https://upload.wikimedia.org/wikipedia/commons/a/af/Prof_Sarit_kraus.jpg" || echo "Sarit download failed"
+          curl -L --max-time 30 -o images/sharon-gannot.jpg "https://sharongannot.group/wp-content/themes/sound/img/pic-sharon-gannot.jpg" || echo "Sharon download failed"
+          curl -L --max-time 30 -o images/gal-kaminka.jpg "https://u.cs.biu.ac.il/~kaminkg/authors/galk/avatar_hu0524f3c4459aaec3b3a6f1993099c166_79443_270x270_fill_q75_lanczos_center.jpg" || echo "Gal download failed"
           ls -la images/
       - name: Commit images
         run: |
