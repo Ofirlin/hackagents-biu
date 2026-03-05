@@ -474,3 +474,11 @@ body {
     padding: 100px 16px 72px;
   }
 }
+
+/* ===== SPONSOR LOGO ===== */
+.sponsor-logo {
+  height: 40px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+}
