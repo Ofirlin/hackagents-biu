@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ofirlin.github.io/mlsd-lab/sitemap.xml
