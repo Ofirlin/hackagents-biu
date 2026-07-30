@@ -81,6 +81,14 @@ h4 { font-size: 18px; }
 .lab-grid figure:nth-child(3) img { object-position: center 32%; }
 .lab-grid figcaption { padding: 10px 12px 12px; }
 
+.funding-section { margin: 34px 0 38px; padding: 24px; border: 1px solid #d9e2ec; border-radius: 14px; background: linear-gradient(180deg, #ffffff, #f8fbff); box-shadow: 0 12px 30px rgba(15, 23, 42, .07); }
+.funding-section h2 { margin-top: 0; font-size: 24px; }
+.funding-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
+.funding-card { display: flex; min-height: 118px; flex-direction: column; gap: 11px; justify-content: center; padding: 16px; border: 1px solid #d9e2ec; border-radius: 12px; color: #334155; background: white; text-align: center; box-shadow: 0 8px 22px rgba(15, 23, 42, .055); }
+.funding-card:hover { color: #23527c; text-decoration: none; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(15, 23, 42, .09); }
+.funding-logo { display: inline-flex; min-height: 38px; align-items: center; justify-content: center; color: #286090; font-size: 20px; font-weight: 800; letter-spacing: .08em; }
+.funding-card span:last-child { color: #667085; font-size: 12px; line-height: 1.35; }
+
 .carousel { position: relative; margin: 20px 30px; border-radius: 3px; background: #eee; }
 .carousel-inner { position: relative; overflow: hidden; width: 100%; height: 420px; }
 .item { position: absolute; inset: 0; display: none; background: white; }
@@ -169,6 +177,7 @@ figcaption { margin-top: 5px; color: var(--muted); font-size: 12px; text-align: 
   .hero-media { min-height: auto; justify-content: flex-start; }
   .hero-portrait { width: 150px; height: 182px; border-width: 5px; }
   .paper-strip, .lab-grid, .video-grid { grid-template-columns: 1fr; }
+  .funding-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .paper-strip img, .lab-grid img, .video-thumb img { height: 220px; }
   .section-heading { display: block; }
   .row { display: block; }
